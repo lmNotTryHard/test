@@ -1,76 +1,94 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
+    height: 100vh;
+
     background-image: url(https://cdn.mos.cms.futurecdn.net/AekfWN8aa5HTK3c9frFGDG-1920-80.jpg);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* nav */
 
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
-    
 
-    height: 80px;
+    backdrop-filter: blur(5px);
+
+    height: 65px;
 }
 
-.navbar_logo{
-    color: white;
-    font-weight: 600;
-    font-size: 40px;
+.navbar_logo {
+    color: #efefef;
+    font-style: italic;
+    font-size: 35px;
 }
 
-nav{
+nav {
     display: flex;
-    gap: 10px;
+    gap: 35px;
 }
 
-.navbar_nav a{
+.navbar_nav a {
+    font-style: italic;
+
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
+    color: #efefef;
     font-size: 1.2em;
 }
 
 /* main */
-.main{
-    height: 650px;
+main {
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.main_title{
+.main_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
     text-align: center;
-    color: white;
-    font-size: 2.2em;
+
+    padding: 40px;
+
+    text-shadow: black 0 0 10px;
+
+    background: rgba(0, 0, 0, 0.6);
 }
 
-.main_p{
+.main_title h1 {
+    font-style: italic;
+    font-size: 3.5em;
+    color: #efefef;
+}
+
+.main_title p {
     margin-top: 30px;
 
-    text-align: center;
-    color: white;
-    font-size: 1em;
+    font-size: 1.3em;
+    color: #a8db86;
 }
 
 
 /* footer */
-footer{
-    background-color: black;
+footer {
+    height: 50px;
 
-    margin-top: 200px;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
-h1{
-    color: white;
-    
+.footer_text {
+
+    text-align: center;
+    color: #efefef;
 }
